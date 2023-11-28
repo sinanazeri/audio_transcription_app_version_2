@@ -49,3 +49,22 @@ Upload an audio file (in .mp3, .wav, or .flac format).
 Click the "Submit" button to start the transcription process.
 
 Wait for the application to transcribe the audio file and display the results.
+
+----
+
+Note: installing OpenAI Whisper requires `ffmpeg` dependency:
+```
+# Linux
+sudo apt update && sudo apt install ffmpeg
+
+# MacOS
+brew install ffmpeg
+
+# Windows
+chco install ffmpeg
+```
+Now we are ready to install Whisper.
+```
+pip install git+https://github.com/openai/whisper.git 
+```
+----
